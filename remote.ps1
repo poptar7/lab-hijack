@@ -8,6 +8,6 @@ Invoke-WmiMethod -ComputerName $pc -name Create -Class win32_process -ArgumentLi
 Start-Sleep 1
 Invoke-WmiMethod -ComputerName $pc -name Create -Class win32_process -ArgumentList "powershell.exe New-ItemProperty -Path 'Registry::hklm\system\currentcontrolset\control\terminal server' -Name fDenyTSConnections -Value 0 -PropertyType DWORD -Force | Out-Null"
 Start-Sleep 1
-Write-Output audiomode:i:1 > C:\session.rdp
+Write-Output audiomode:i:1 > C:\%USERPROFILE%\Desktop\session.rdp
 
-mstsc C:\session.rdp /v:$pc
+mstsc C:\%USERPROFILE%\Desktop\session.rdp /v:$pc
